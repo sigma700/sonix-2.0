@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <div
+      class="main-container flex flex-col items-center p-[2px] lg:relative lg:flex-row lg:items-stretch lg:p-[200px] lg:bg-amber-50 lg:h-fit lg:w-auto"
+    >
+      <!-- <div class="sub-container lg:flex"> -->
+      <div
+        class="content-area bg-gradient-to-b from-stone-900 to-lime-900 w-full flex items-start justify-center p-[50px] z-[-1] h-screen lg:relative lg:h-auto lg:z-0 lg:top-0 lg:items-center lg:rounded-tl-[20px] lg:rounded-bl-[20px]"
+      >
+        <h1
+          class="text-[30px] lg:text-[50px] lg:max-w-[200px] bg-gradient-to-r from-neutral-50 to-cyan-400 bg-clip-text text-transparent"
+        >
+          Sign Up to <span>Soni<span class="lg:text-[60px]">X</span></span>
+        </h1>
+      </div>
+      <section
+        class="bg-white h-screen w-full z-[1] justify-center items-start absolute top-[150px] rounded-tl-[30px] rounded-tr-[30px] flex lg:relative lg:h-auto lg:z-0 lg:top-0 lg:rounded-tr-[30px] lg:rounded-br-[30px] lg:flex-row lg:items-center lg:p-[10px] lg:rounded-tl-[0px] lg:"
+      >
+        <form
+          action="get"
+          class="flex flex-col gap-[20px] items-center mt-[50px] lg:gap-[8px]"
+        >
+          <label for="Email" class="flex flex-col gap-[10px] font-bold w-full">
+            Email Adress
+            <input
+              class="bg-amber-50 p-[10px] rounded-[10px] font-light border-[1px] min-w-[300px] lg:text-[15px]"
+              type="email"
+              required
+              name="signup"
+              placeholder="Email"
+            />
+          </label>
+          <label for="Password" class="flex flex-col gap-[10px] font-bold">
+            Password
+            <input
+              class="bg-amber-50 p-[10px] rounded-[10px] font-light border-[1px] w-[300px] focus:border-green-600 lg:text-[15px]"
+              type="password"
+              required
+              placeholder="Password"
+              name="signup"
+            />
+          </label>
+          <label for="Password" class="flex flex-col gap-[10px] font-bold">
+            Confirm your password
+            <input
+              class="bg-amber-50 p-[10px] rounded-[10px] font-light border-[1px] w-[300px] lg:text-[15px]"
+              type="password"
+              required
+              placeholder="Confirm your password"
+              name="signup"
+            />
+          </label>
+          <div class="options flex flex-col gap-[20px]">
+            Or sign up with :
+            <div
+              class="bg-amber-50 p-[10px] w-[300px] text-[20px] rounded-[10px] border-amber-700 lg:hover:border-[1px] transition-[0.2s] lg:hover:bg-transparent"
+            >
+              <a
+                class="flex items-center justify-center gap-[200px]"
+                href="chrome://password-manager/passwords"
+              >
+                Google <i class="bx bxl-google"></i>
+              </a>
+            </div>
+            <div
+              class="bg-amber-50 p-[10px] w-[300px] flex items-center justify-center gap-[170px] text-[20px] rounded-[10px] border-amber-700 lg:hover:bg-transparent lg:hover:border-[1px] transition-[0.2s]"
+            >
+              <a
+                class="flex items-center justify-center gap-[170px]"
+                href="chrome://password-manager/passwords"
+              >
+                GooglePlus <i class="bx bxl-google-plus"></i>
+              </a>
+            </div>
+          </div>
+          <input
+            class="w-[300px] p-[10px] bg-gray-900 text-white text-[20px] rounded-[10px] lg:text-[15px]"
+            type="submit"
+            value="Sign up"
+          />
+          <div>
+            <h2>Already have an account ?</h2>
+            <a class="underline text-[20px]" href="/login.html"
+              >Login To your existing account</a
+            >
+          </div>
+        </form>
+      </section>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>
