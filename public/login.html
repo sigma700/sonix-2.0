@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
+    <title>Welcome Back</title>
     <link href="./output.css" rel="stylesheet" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="">
+  <body class="lg:h-screen">
     <div
       class="main-container flex flex-col items-center p-[2px] lg:relative lg:flex-row lg:items-stretch lg:p-[200px] lg:bg-amber-50 lg:h-fit lg:w-auto"
     >
@@ -27,24 +27,24 @@
         <h1
           class="text-[30px] lg:text-[50px] lg:max-w-[200px] bg-gradient-to-r from-neutral-50 to-cyan-400 bg-clip-text text-transparent"
         >
-          Sign Up to <span>Soni<span class="lg:text-[60px]">X</span></span>
+          Login To <span>Soni<span class="lg:text-[60px]">X</span></span>
         </h1>
       </div>
       <section
-        class="bg-white h-screen w-full z-[1] justify-center items-start absolute top-[150px] rounded-tl-[30px] rounded-tr-[30px] flex lg:relative lg:h-auto lg:z-0 lg:top-0 lg:rounded-tr-[30px] lg:rounded-br-[30px] lg:flex-row lg:items-center lg:p-[10px] lg:rounded-tl-[0px] lg:"
+        class="bg-white h-screen w-full z-[1] justify-center items-start absolute top-[150px] rounded-tl-[30px] rounded-tr-[30px] flex lg:relative lg:h-auto lg:z-0 lg:top-0 lg:rounded-tr-[30px] lg:rounded-br-[30px] lg:flex-row lg:items-center lg:p-[30px] lg:rounded-tl-[0px]"
       >
         <form
           action="get"
           class="flex flex-col gap-[20px] items-center mt-[50px] lg:gap-[8px]"
         >
           <label for="Email" class="flex flex-col gap-[10px] font-bold w-full">
-            Email Adress
+            Username or Email Adress
             <input
               class="bg-amber-50 p-[10px] rounded-[10px] font-light border-[1px] min-w-[300px] lg:text-[15px]"
-              type="email"
+              type="text"
               required
               name="signup"
-              placeholder="Email"
+              placeholder="Username Or Email Adress"
             />
           </label>
           <label for="Password" class="flex flex-col gap-[10px] font-bold">
@@ -67,40 +67,12 @@
               name="signup"
             />
           </label>
-          <div class="options flex flex-col gap-[20px]">
-            Or sign up with :
-            <div
-              class="bg-amber-50 p-[10px] w-[300px] text-[20px] rounded-[10px] border-amber-700 lg:hover:border-[1px] transition-[0.2s] lg:hover:bg-transparent"
-            >
-              <a
-                class="flex items-center justify-center gap-[200px]"
-                href="chrome://password-manager/passwords"
-              >
-                Google <i class="bx bxl-google"></i>
-              </a>
-            </div>
-            <div
-              class="bg-amber-50 p-[10px] w-[300px] flex items-center justify-center gap-[170px] text-[20px] rounded-[10px] border-amber-700 lg:hover:bg-transparent lg:hover:border-[1px] transition-[0.2s]"
-            >
-              <a
-                class="flex items-center justify-center gap-[170px]"
-                href="chrome://password-manager/passwords"
-              >
-                GooglePlus <i class="bx bxl-google-plus"></i>
-              </a>
-            </div>
-          </div>
+
           <input
             class="w-[300px] p-[10px] bg-gray-900 text-white text-[20px] rounded-[10px] lg:text-[15px]"
             type="submit"
-            value="Sign up"
+            value="Login"
           />
-          <div>
-            <h2>Already have an account ?</h2>
-            <a class="underline text-[20px]" href="/welcome-back"
-              >Login To your existing account</a
-            >
-          </div>
         </form>
       </section>
       <!-- </div> -->

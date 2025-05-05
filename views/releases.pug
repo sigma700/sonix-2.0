@@ -1,0 +1,19 @@
+//- views/releases.pug
+doctype html
+html(lang="en")
+  head
+    title Spotify New Releases
+    style.
+      body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; }
+      .album { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 8px; }
+      img { max-width: 200px; height: auto; }
+  body
+    h1 New Music Releases
+    each album in releases
+      .album
+        h2= album.name
+        p Artists: #{album.artists.join(', ')}
+        p Released: #{album.release_date}
+        p Tracks: #{album.total_tracks}
+        if album.image
+          img(src=album.image alt=`Cover for ${album.name}`)
